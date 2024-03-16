@@ -1,13 +1,12 @@
-package fr.pajonti.sejuapi.enums.league;
+package fr.pajonti.sejuapi.enums.tft;
 
-public enum Role {
+public enum TFTGameType {
 
-    CAPTAIN("CAPTAIN"),
-    MEMBER("MEMBER");
+    MATCHED("MATCHED");
 
     public final String textValue;
 
-    Role(String textValue) {
+    TFTGameType(String textValue) {
         this.textValue = textValue;
     }
 
@@ -24,8 +23,8 @@ public enum Role {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static Role getEnum(String value){
-        for (Role p : values()) {
+    public static TFTGameType getEnum(String value){
+        for (TFTGameType p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

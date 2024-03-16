@@ -1,6 +1,6 @@
 package fr.pajonti.sejuapi.enums.league;
 
-public enum GameMode {
+public enum LeagueGameMode {
 
     /**
      * Classic Summoner's Rift and Twisted Treeline games
@@ -86,7 +86,7 @@ public enum GameMode {
 
     public final String textValue;
 
-    GameMode(String textValue) {
+    LeagueGameMode(String textValue) {
         this.textValue = textValue;
     }
 
@@ -103,8 +103,8 @@ public enum GameMode {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameMode getEnum(String value){
-        for (GameMode p : values()) {
+    public static LeagueGameMode getEnum(String value){
+        for (LeagueGameMode p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

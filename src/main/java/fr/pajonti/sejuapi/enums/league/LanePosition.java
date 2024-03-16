@@ -1,14 +1,17 @@
-package fr.pajonti.sejuapi.enums.lor;
+package fr.pajonti.sejuapi.enums.league;
 
-public enum GameMode {
-
-    CONSTRUCTED("Constructed"),
-    TUTORIAL("Tutorial"),
-    EXPEDITIONS("Expeditions");
+public enum LanePosition {
+    UNSELECTED("UNSELECTED"),
+    FILL("FILL"),
+    TOP("TOP"),
+    JUNGLE("JUNGLE"),
+    MIDDLE("MIDDLE"),
+    BOTTOM("BOTTOM"),
+    UTILITY("UTILITY");
 
     public final String textValue;
 
-    GameMode(String textValue) {
+    LanePosition(String textValue) {
         this.textValue = textValue;
     }
 
@@ -25,8 +28,8 @@ public enum GameMode {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameMode getEnum(String value){
-        for (GameMode p : values()) {
+    public static LanePosition getEnum(String value){
+        for (LanePosition p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

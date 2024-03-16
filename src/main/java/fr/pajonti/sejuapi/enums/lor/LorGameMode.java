@@ -1,24 +1,14 @@
-package fr.pajonti.sejuapi.enums.league;
+package fr.pajonti.sejuapi.enums.lor;
 
-public enum GameType {
+public enum LorGameMode {
 
-    /**
-     * Custom games
-     */
-    CUSTOM_GAME("CUSTOM_GAME"),
-    /**
-     * Tutorial games
-     */
-    TUTORIAL_GAME("TUTORIAL_GAME"),
-    /**
-     * all other games
-     */
-    MATCHED_GAME("MATCHED_GAME");
-
+    CONSTRUCTED("Constructed"),
+    TUTORIAL("Tutorial"),
+    EXPEDITIONS("Expeditions");
 
     public final String textValue;
 
-    GameType(String textValue) {
+    LorGameMode(String textValue) {
         this.textValue = textValue;
     }
 
@@ -35,8 +25,8 @@ public enum GameType {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameType getEnum(String value){
-        for (GameType p : values()) {
+    public static LorGameMode getEnum(String value){
+        for (LorGameMode p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

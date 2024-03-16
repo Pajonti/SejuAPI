@@ -1,12 +1,20 @@
 package fr.pajonti.sejuapi.enums.tft;
 
-public enum GameType {
-
-    MATCHED("MATCHED");
+public enum TFTTier {
+    CHALLENGER("CHALLENGER"),
+    GRANDMASTER("GRANDMASTER"),
+    MASTER("MASTER"),
+    DIAMOND("DIAMOND"),
+    PLATINUM("PLATINUM"),
+    EMERALD("EMERALD"),
+    GOLD("GOLD"),
+    SILVER("SILVER"),
+    BRONZE("BRONZE"),
+    IRON("IRON");
 
     public final String textValue;
 
-    GameType(String textValue) {
+    TFTTier(String textValue) {
         this.textValue = textValue;
     }
 
@@ -23,8 +31,8 @@ public enum GameType {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameType getEnum(String value){
-        for (GameType p : values()) {
+    public static TFTTier getEnum(String value){
+        for (TFTTier p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

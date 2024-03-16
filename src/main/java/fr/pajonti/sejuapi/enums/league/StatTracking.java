@@ -1,13 +1,19 @@
-package fr.pajonti.sejuapi.enums.lor;
+package fr.pajonti.sejuapi.enums.league;
 
-public enum GameFormat {
+public enum StatTracking {
 
-    STANDARD("standard"),
-    ETERNAL("eternal");
+    /**
+     * LIFETIME - stats are incremented without reset
+     */
+    LIFETIME("LIFETIME"),
+    /**
+     * SEASON - stats are accumulated by season and reset at the beginning of new season
+     */
+    SEASON("SEASON");
 
     public final String textValue;
 
-    GameFormat(String textValue) {
+    StatTracking(String textValue) {
         this.textValue = textValue;
     }
 
@@ -24,8 +30,8 @@ public enum GameFormat {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameFormat getEnum(String value){
-        for (GameFormat p : values()) {
+    public static StatTracking getEnum(String value){
+        for (StatTracking p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

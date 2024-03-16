@@ -1,19 +1,16 @@
-package fr.pajonti.sejuapi.enums.league;
+package fr.pajonti.sejuapi.enums.tft;
 
-public enum Tracking {
+public enum TFTGameMode {
 
     /**
-     * LIFETIME - stats are incremented without reset
+     * TFT Mode
      */
-    LIFETIME("LIFETIME"),
-    /**
-     * SEASON - stats are accumulated by season and reset at the beginning of new season
-     */
-    SEASON("SEASON");
+    TFT("TFT");
+
 
     public final String textValue;
 
-    Tracking(String textValue) {
+    TFTGameMode(String textValue) {
         this.textValue = textValue;
     }
 
@@ -30,8 +27,8 @@ public enum Tracking {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static Tracking getEnum(String value){
-        for (Tracking p : values()) {
+    public static TFTGameMode getEnum(String value){
+        for (TFTGameMode p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

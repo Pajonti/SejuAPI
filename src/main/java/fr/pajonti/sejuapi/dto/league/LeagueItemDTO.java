@@ -15,6 +15,7 @@ public class LeagueItemDTO implements RiotDTO {
     private MiniSeriesDTO miniSeries;
     private Boolean inactive;
     private Boolean veteran;
+    private Boolean hotStreak;
     private LeagueTier rank;
     private Integer leaguePoints;
     /**

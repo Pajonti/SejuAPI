@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class ChampionMasteryDTO implements RiotDTO {
-
     /**
      * Player Universal Unique Identifier. Exact length of 78 characters. (Encrypted)
      */

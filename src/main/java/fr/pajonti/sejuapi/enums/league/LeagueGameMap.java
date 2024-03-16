@@ -8,8 +8,8 @@ import java.lang.reflect.Type;
 /**
  * <a href="https://static.developer.riotgames.com/docs/lol/maps.json">https://static.developer.riotgames.com/docs/lol/maps.json</a>
  */
-@JsonAdapter(GameMap.Serializer.class)
-public enum GameMap {
+@JsonAdapter(LeagueGameMap.Serializer.class)
+public enum LeagueGameMap {
     /**
      * Original Summer variant
      */
@@ -77,7 +77,7 @@ public enum GameMap {
 
     public final Integer id;
 
-    GameMap(Integer id) {
+    LeagueGameMap(Integer id) {
         this.id = id;
     }
 
@@ -94,8 +94,8 @@ public enum GameMap {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameMap getEnum(Integer value){
-        for (GameMap p : values()) {
+    public static LeagueGameMap getEnum(Integer value){
+        for (LeagueGameMap p : values()) {
             if (p.id.equals(value)) {
                 return p;
             }
@@ -103,15 +103,15 @@ public enum GameMap {
         return null;
     }
 
-    static class Serializer implements JsonSerializer<GameMap>, JsonDeserializer<GameMap> {
+    static class Serializer implements JsonSerializer<LeagueGameMap>, JsonDeserializer<LeagueGameMap> {
 
         @Override
-        public GameMap deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-            return GameMap.getEnum(jsonElement.getAsInt());
+        public LeagueGameMap deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+            return LeagueGameMap.getEnum(jsonElement.getAsInt());
         }
 
         @Override
-        public JsonElement serialize(GameMap gameMap, Type type, JsonSerializationContext jsonSerializationContext) {
+        public JsonElement serialize(LeagueGameMap gameMap, Type type, JsonSerializationContext jsonSerializationContext) {
             return jsonSerializationContext.serialize(gameMap.id);
         }
     }

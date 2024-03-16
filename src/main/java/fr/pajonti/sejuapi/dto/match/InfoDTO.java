@@ -32,7 +32,7 @@ public class InfoDTO implements RiotDTO {
     /**
      * Refer to the Game Constants documentation.
      */
-    private GameMode gameMode;
+    private LeagueGameMode gameMode;
     private String gameName;
     /**
      * Unix timestamp for when match starts on the game server.
@@ -41,7 +41,7 @@ public class InfoDTO implements RiotDTO {
     /**
      * Refer to the Game Constants documentation.
      */
-    private GameType gameType;
+    private LeagueGameType gameType;
     /**
      * The first two parts can be used to determine the patch a game was played on.
      */
@@ -49,10 +49,10 @@ public class InfoDTO implements RiotDTO {
     /**
      * Refer to the Game Constants documentation.
      */
-    private GameMap mapId;
+    private LeagueGameMap mapId;
     private List<ParticipantDTO> participants;
     private String platformId;
-    private QueueID queueId;
+    private LeagueQueueID queueId;
     private List<TeamDTO> teams;
     private String tournamentCode;
 }

@@ -5,7 +5,7 @@ import fr.pajonti.sejuapi.dto.leagueexp.MiniSeriesDTO;
 import fr.pajonti.sejuapi.enums.league.LeagueDivision;
 import fr.pajonti.sejuapi.enums.league.LeagueQueue;
 import fr.pajonti.sejuapi.enums.league.LeagueTier;
-import fr.pajonti.sejuapi.enums.league.Position;
+import fr.pajonti.sejuapi.enums.league.LanePosition;
 import lombok.Data;
 
 @Data
@@ -15,7 +15,7 @@ public class LeagueEntryDTO implements RiotDTO {
      * Player's summonerId (Encrypted)
      */
     private String summonerId;
-    private Position summonerName;
+    private LanePosition summonerName;
     private LeagueQueue queueType;
     private LeagueTier tier;
     /**

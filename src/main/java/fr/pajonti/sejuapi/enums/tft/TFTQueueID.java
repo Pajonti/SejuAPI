@@ -5,8 +5,8 @@ import com.google.gson.annotations.JsonAdapter;
 
 import java.lang.reflect.Type;
 
-@JsonAdapter(QueueID.Serializer.class)
-public enum QueueID {
+@JsonAdapter(TFTQueueID.Serializer.class)
+public enum TFTQueueID {
 
     NORMAL_NORMAL_TFT(1090L),
     RANKED_RANKED_TFT(1100L),
@@ -19,7 +19,7 @@ public enum QueueID {
 
     public final Long type;
 
-    QueueID(Long type) {
+    TFTQueueID(Long type) {
         this.type = type;
     }
 
@@ -36,8 +36,8 @@ public enum QueueID {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static QueueID getEnum(Long value){
-        for (QueueID p : values()) {
+    public static TFTQueueID getEnum(Long value){
+        for (TFTQueueID p : values()) {
             if (p.type.equals(value)) {
                 return p;
             }
@@ -45,15 +45,15 @@ public enum QueueID {
         return null;
     }
 
-    static class Serializer implements JsonSerializer<QueueID>, JsonDeserializer<QueueID> {
+    static class Serializer implements JsonSerializer<TFTQueueID>, JsonDeserializer<TFTQueueID> {
 
         @Override
-        public QueueID deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-            return QueueID.getEnum(jsonElement.getAsLong());
+        public TFTQueueID deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+            return TFTQueueID.getEnum(jsonElement.getAsLong());
         }
 
         @Override
-        public JsonElement serialize(QueueID queueID, Type type, JsonSerializationContext jsonSerializationContext) {
+        public JsonElement serialize(TFTQueueID queueID, Type type, JsonSerializationContext jsonSerializationContext) {
             return jsonSerializationContext.serialize(queueID.type);
         }
     }

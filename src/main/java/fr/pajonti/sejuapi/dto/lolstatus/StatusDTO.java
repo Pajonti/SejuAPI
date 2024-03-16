@@ -16,6 +16,7 @@ public class StatusDTO implements RiotDTO {
     private List<ContentDTO> titles;
     private List<UpdateDTO> updates;
     private String created_at;
+    private String archive_at;
     private String updated_at;
     private List<Platform> platforms;
 }

@@ -1,17 +1,17 @@
-package fr.pajonti.sejuapi.enums.league;
+package fr.pajonti.sejuapi.enums.tft;
 
-public enum Position {
-    UNSELECTED("UNSELECTED"),
-    FILL("FILL"),
-    TOP("TOP"),
-    JUNGLE("JUNGLE"),
-    MIDDLE("MIDDLE"),
-    BOTTOM("BOTTOM"),
-    UTILITY("UTILITY");
+public enum TFTQueue {
+    NORMAL_TFT("NORMAL_TFT"),
+    RANKED_TFT("RANKED_TFT"),
+    TUTORIAL_TFT("TUTORIAL_TFT"),
+    RANKED_TFT_TURBO("RANKED_TFT_TURBO"),
+    RANKED_TFT_DOUBLE_UP("RANKED_TFT_DOUBLE_UP"),
+    SF_TFT("SF_TFT"),
+    LYN23_TFT("NORMAL_TFT");
 
     public final String textValue;
 
-    Position(String textValue) {
+    TFTQueue(String textValue) {
         this.textValue = textValue;
     }
 
@@ -28,8 +28,8 @@ public enum Position {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static Position getEnum(String value){
-        for (Position p : values()) {
+    public static TFTQueue getEnum(String value){
+        for (TFTQueue p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

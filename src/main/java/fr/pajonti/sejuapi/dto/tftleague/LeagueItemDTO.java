@@ -1,7 +1,6 @@
 package fr.pajonti.sejuapi.dto.tftleague;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.dto.league.MiniSeriesDTO;
 import fr.pajonti.sejuapi.enums.league.LeagueTier;
 import lombok.Data;
 
@@ -16,6 +15,7 @@ public class LeagueItemDTO implements RiotDTO {
     private MiniSeriesDTO miniSeries;
     private Boolean inactive;
     private Boolean veteran;
+    private Boolean hotStreak;
     private LeagueTier rank;
     private Integer leaguePoints;
     /**

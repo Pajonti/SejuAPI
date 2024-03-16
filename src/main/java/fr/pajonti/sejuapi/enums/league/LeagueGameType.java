@@ -1,16 +1,28 @@
-package fr.pajonti.sejuapi.enums.tft;
+package fr.pajonti.sejuapi.enums.league;
 
-public enum GameMode {
+public enum LeagueGameType {
 
     /**
-     * TFT Mode
+     * Custom games
      */
-    TFT("TFT");
+    CUSTOM_GAME("CUSTOM_GAME"),
+    /**
+     * Tutorial games
+     */
+    TUTORIAL_GAME("TUTORIAL_GAME"),
+    /**
+     * all other games
+     */
+    MATCHED("MATCHED"),
+    /**
+     * all other games
+     */
+    MATCHED_GAME("MATCHED_GAME");
 
 
     public final String textValue;
 
-    GameMode(String textValue) {
+    LeagueGameType(String textValue) {
         this.textValue = textValue;
     }
 
@@ -27,8 +39,8 @@ public enum GameMode {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameMode getEnum(String value){
-        for (GameMode p : values()) {
+    public static LeagueGameType getEnum(String value){
+        for (LeagueGameType p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

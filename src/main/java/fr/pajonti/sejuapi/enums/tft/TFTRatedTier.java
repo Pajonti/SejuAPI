@@ -1,17 +1,15 @@
-package fr.pajonti.sejuapi.enums.lor;
+package fr.pajonti.sejuapi.enums.tft;
 
-public enum GameType {
-
-    RANKED("Ranked"),
-    NORMAL("Normal"),
-    TUTORIAL("Tutorial"),
-    VANILLATRIAL("VanillaTrial"),
-    SINGLETON("Singleton"),
-    STANDARDGAUNTLET("StandardGauntlet");
+public enum TFTRatedTier {
+    ORANGE("ORANGE"),
+    PURPLE("PURPLE"),
+    BLUE("BLUE"),
+    GREEN("GREEN"),
+    GRAY("GRAY");
 
     public final String textValue;
 
-    GameType(String textValue) {
+    TFTRatedTier(String textValue) {
         this.textValue = textValue;
     }
 
@@ -28,8 +26,8 @@ public enum GameType {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static GameType getEnum(String value){
-        for (GameType p : values()) {
+    public static TFTRatedTier getEnum(String value){
+        for (TFTRatedTier p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

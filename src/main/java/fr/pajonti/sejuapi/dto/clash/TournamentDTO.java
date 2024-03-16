@@ -9,7 +9,7 @@ import java.util.List;
 public class TournamentDTO implements RiotDTO {
     private Integer id;
     private Integer themeId;
-    private String nameKet;
+    private String nameKey;
     private String nameKeySecondary;
     /**
      * Tournament phase.

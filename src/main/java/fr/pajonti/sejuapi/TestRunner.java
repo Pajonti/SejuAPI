@@ -4,9 +4,7 @@ import com.google.gson.Gson;
 import fr.pajonti.sejuapi.dto.account.AccountDTO;
 import fr.pajonti.sejuapi.dto.champion.ChampionInfo;
 import fr.pajonti.sejuapi.dto.clash.PlayerDTO;
-import fr.pajonti.sejuapi.dto.lolchallenges.ChallengeConfigInfoDTO;
 import fr.pajonti.sejuapi.dto.match.MatchDTO;
-import fr.pajonti.sejuapi.enums.league.QueueID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,7 +12,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class TestRunner {

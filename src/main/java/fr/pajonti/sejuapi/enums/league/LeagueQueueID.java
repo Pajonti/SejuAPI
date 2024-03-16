@@ -5,8 +5,8 @@ import com.google.gson.annotations.JsonAdapter;
 
 import java.lang.reflect.Type;
 
-@JsonAdapter(QueueID.Serializer.class)
-public enum QueueID {
+@JsonAdapter(LeagueQueueID.Serializer.class)
+public enum LeagueQueueID {
     CUSTOM_GAMES(0),
     SUMMONERS_RIFT_5V5_BLIND_PICK_GAMES_DEPRECATED_IN_PATCH_7_19_IN_FAVOR_OF_QUEUEID_430(2),
     SUMMONERS_RIFT_5V5_RANKED_SOLO_GAMES_DEPRECATED_IN_FAVOR_OF_QUEUEID_420(4),
@@ -97,7 +97,7 @@ public enum QueueID {
 
     public final Integer id;
 
-    QueueID(Integer id) {
+    LeagueQueueID(Integer id) {
         this.id = id;
     }
 
@@ -114,8 +114,8 @@ public enum QueueID {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static QueueID getEnum(Integer value){
-        for (QueueID p : values()) {
+    public static LeagueQueueID getEnum(Integer value){
+        for (LeagueQueueID p : values()) {
             if (p.id.equals(value)) {
                 return p;
             }
@@ -123,15 +123,15 @@ public enum QueueID {
         return null;
     }
 
-    static class Serializer implements JsonSerializer<QueueID>, JsonDeserializer<QueueID> {
+    static class Serializer implements JsonSerializer<LeagueQueueID>, JsonDeserializer<LeagueQueueID> {
 
         @Override
-        public QueueID deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-            return QueueID.getEnum(jsonElement.getAsInt());
+        public LeagueQueueID deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+            return LeagueQueueID.getEnum(jsonElement.getAsInt());
         }
 
         @Override
-        public JsonElement serialize(QueueID queueID, Type type, JsonSerializationContext jsonSerializationContext) {
+        public JsonElement serialize(LeagueQueueID queueID, Type type, JsonSerializationContext jsonSerializationContext) {
             return jsonSerializationContext.serialize(queueID.id);
         }
     }
