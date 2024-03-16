@@ -1,7 +1,6 @@
 package fr.pajonti.sejuapi.dto.lolchallenges;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.enums.league.LeagueTier;
 import lombok.Data;
 
 import java.util.Locale;

@@ -1,8 +1,6 @@
 package fr.pajonti.sejuapi.dto.spectatortft;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.dto.shared.BannedChampionDTO;
-import fr.pajonti.sejuapi.dto.shared.ObserverDTO;
 import fr.pajonti.sejuapi.enums.tft.GameMode;
 import fr.pajonti.sejuapi.enums.tft.GameType;
 import fr.pajonti.sejuapi.enums.tft.QueueID;

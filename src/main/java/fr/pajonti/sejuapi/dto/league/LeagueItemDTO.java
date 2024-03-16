@@ -1,7 +1,6 @@
 package fr.pajonti.sejuapi.dto.league;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.dto.shared.MiniSeriesDTO;
 import fr.pajonti.sejuapi.enums.league.LeagueTier;
 import lombok.Data;
 

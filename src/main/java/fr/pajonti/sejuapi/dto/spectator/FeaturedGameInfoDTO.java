@@ -1,8 +1,6 @@
 package fr.pajonti.sejuapi.dto.spectator;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.dto.shared.BannedChampionDTO;
-import fr.pajonti.sejuapi.dto.shared.ObserverDTO;
 import fr.pajonti.sejuapi.enums.league.GameMode;
 import fr.pajonti.sejuapi.enums.league.GameType;
 import fr.pajonti.sejuapi.enums.league.QueueID;
