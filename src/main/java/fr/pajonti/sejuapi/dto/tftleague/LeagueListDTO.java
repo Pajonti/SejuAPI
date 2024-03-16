@@ -1,4 +1,4 @@
-package fr.pajonti.sejuapi.dto.league;
+package fr.pajonti.sejuapi.dto.tftleague;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
 import fr.pajonti.sejuapi.enums.league.LeagueQueue;

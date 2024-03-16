@@ -1,6 +1,6 @@
 package fr.pajonti.sejuapi.enums.league;
 
-public enum Queue {
+public enum LeagueQueue {
     RANKED_SOLO_5X5("RANKED_SOLO_5X5"),
     RANKED_TFT("RANKED_TFT"),
     RANKED_FLEX_SR("RANKED_FLEX_SR"),
@@ -8,7 +8,7 @@ public enum Queue {
 
     public final String textValue;
 
-    Queue(String textValue) {
+    LeagueQueue(String textValue) {
         this.textValue = textValue;
     }
 
@@ -25,8 +25,8 @@ public enum Queue {
      * @param value Value to check enum against
      * @return Enum object based on the passed value, or null if no enum is found
      */
-    public static Queue getEnum(String value){
-        for (Queue p : values()) {
+    public static LeagueQueue getEnum(String value){
+        for (LeagueQueue p : values()) {
             if (p.textValue.equals(value)) {
                 return p;
             }

@@ -1,4 +1,4 @@
-package fr.pajonti.sejuapi.dto.league;
+package fr.pajonti.sejuapi.dto.leagueexp;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
 import lombok.Data;

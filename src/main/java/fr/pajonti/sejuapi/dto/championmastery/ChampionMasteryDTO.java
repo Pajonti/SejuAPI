@@ -14,7 +14,7 @@ public class ChampionMasteryDTO implements RiotDTO {
     /**
      * Number of points needed to achieve next level. Zero if player reached maximum champion level for this champion.
      */
-    private Long championsPointsUltilNextLevel;
+    private Long championsPointsUntilNextLevel;
 
     /**
      * Is chest granted for this champion or not in current season.

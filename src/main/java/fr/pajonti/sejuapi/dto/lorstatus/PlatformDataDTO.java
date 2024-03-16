@@ -1,4 +1,4 @@
-package fr.pajonti.sejuapi.dto.shared;
+package fr.pajonti.sejuapi.dto.lorstatus;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
 import fr.pajonti.sejuapi.enums.shared.Locale;

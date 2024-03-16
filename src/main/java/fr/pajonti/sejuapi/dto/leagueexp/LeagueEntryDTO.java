@@ -1,7 +1,10 @@
-package fr.pajonti.sejuapi.dto.shared;
+package fr.pajonti.sejuapi.dto.leagueexp;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.enums.league.*;
+import fr.pajonti.sejuapi.enums.league.LeagueDivision;
+import fr.pajonti.sejuapi.enums.league.LeagueTier;
+import fr.pajonti.sejuapi.enums.league.Position;
+import fr.pajonti.sejuapi.enums.league.LeagueQueue;
 import lombok.Data;
 
 @Data
@@ -12,7 +15,7 @@ public class LeagueEntryDTO implements RiotDTO {
      */
     private String summonerId;
     private Position summonerName;
-    private Queue queueType;
+    private LeagueQueue queueType;
     private LeagueTier tier;
     /**
      * The player's division within a tier.
