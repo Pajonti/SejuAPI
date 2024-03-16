@@ -32,7 +32,7 @@ public class TestRunner {
         PlayerDTO pdto = new Gson().fromJson("{\"position\": 'JUNGLE'}", PlayerDTO.class);
         System.out.println(pdto);
 
-        URL url = new URL("https://europe.api.riotgames.com/lol/match/v5/matches/EUW1_6856268103?api_key=RGAPI-04f1a4c5-3c70-4745-b15f-7b5ef978ac12");
+        URL url = new URL("https://europe.api.riotgames.com/lol/match/v5/matches/EUW1_6856268103?api_key=RGAPI-3ed64a06-6046-4cd4-aaa8-edaa10f7ab71");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
 
