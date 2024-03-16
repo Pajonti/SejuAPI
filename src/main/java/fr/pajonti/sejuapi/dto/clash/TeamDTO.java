@@ -1,8 +1,6 @@
 package fr.pajonti.sejuapi.dto.clash;
 
 import fr.pajonti.sejuapi.dto.RiotDTO;
-import fr.pajonti.sejuapi.enums.Position;
-import fr.pajonti.sejuapi.enums.Role;
 import lombok.Data;
 
 import java.util.List;
